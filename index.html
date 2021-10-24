@@ -23,29 +23,29 @@
                 <img src="images/silvio2.jpg" alt="Foto Pessoal de Silvio Ferreira Jr">
             </div>
 
-            <h1>Silvio Ferreira Jr</h1>
+            <h1 id="userName">Silvio Ferreira Jr</h1>
 
-            <a href="https://github.com/SilvioFJr">
+            <a href="https://github.com/SilvioFJr" target="_blanck">
                 <img src="images/github.svg" alt="ícone github" />
                 @SilvioFJr
             </a>
 
 
-            <p>Estudante de Engenharia de Sistemas e Técnico em Eletrotécnica</p>
+            <p>Electrical Technician, Systems Engineering Student</p>
 
-            <ul>
-                <li>
-                    <a hef="https://www.instagram.com/silvior.junio/" targt="_blanck">
+            <ul id="socialLinks">
+                <li class="instagram">
+                    <a href="https://www.instagram.com/silvior.junio/" target="_blanck">
                         <img src="images/instagram.svg" alt="ícone instagram">
                     </a>
                 </li>
-                <li>
-                    <a hef="https://www.linkedin.com/in/silvioferreirajr/" target="_blanck">
+                <li class="linkedin">
+                    <a href="https://www.linkedin.com/in/silvioferreirajr/" target="_blanck">
                         <img src="images/linkedin.svg" alt="ícone linkedin">
                     </a>
                 </li>
-                <li>
-                    <a hef="mailto:silviojr.ferreira@hotmail.com" target="_blanck">
+                <li class="email">
+                    <a href="mailto:silviojr.ferreira@hotmail.com" target="_blanck">
                         <img src="images/email.svg" alt="email">
                     </a>
                 </li>
@@ -55,6 +55,50 @@
         </div>
 
     </main>
+
+
+    <script>
+        /*function showme(self){
+            alert(self)
+        }
+        
+        const link = {
+            github: 'silvio_git',
+            instagram: 'silvio_inst',
+            linkedin: 'silvio_linkedin',
+            email: 'silvio_mail'
+
+        }
+
+        showme(link.github)
+        showme(link.linkedin)
+
+        function changeSocialMedia() {/*Trocando o H1 usando o ID
+            document.getElementById('userName').textContent = 'Eduardo'
+            userName.textContent = 'Leandro'
+
+        }*/
+
+        const linkSocialMedia = {
+            github: 'silvio_git',
+            instagram: 'silvio_inst',
+            linkedin: 'silvio_linkedin',
+            email: 'silvio_mail'
+
+        }
+
+        function changeSocialMedia() {/*Trocando o H1 usando o ID*/
+            for (let li of socialLinks.children) {
+                const social = li.getAttribute('class')
+                li.children[0].href = `https://${social}.com/${linkSocialMedia[social]}`
+                alert(li.children[0].href)
+            }
+        }
+
+        changeSocialMedia()
+
+
+    </script>
 
 </body>
 
