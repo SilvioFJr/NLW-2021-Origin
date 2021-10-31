@@ -20,18 +20,18 @@
                 <span>
                     <img src="images/build.svg" alt="Selo Rocketseat">
                 </span>
-                <img src="images/silvio2.jpg" alt="Foto Pessoal de Silvio Ferreira Jr">
+                <img id="userImage" src="images/silvio2.jpg" alt="Foto Pessoal de Silvio Ferreira Jr">
             </div>
 
             <h1 id="userName">Silvio Ferreira Jr</h1>
 
-            <a href="https://github.com/SilvioFJr" target="_blanck">
+            <a id="userLink" href="https://github.com/SilvioFJr" target="_blanck">
                 <img src="images/github.svg" alt="ícone github" />
-                @SilvioFJr
+                <span id="userLogin">@SilvioFJr</span>
             </a>
 
 
-            <p>Electrical Technician, Systems Engineering Student</p>
+            <p id="userBio">Electrical Technician, Systems Engineering Student</p>
 
             <ul id="socialLinks">
                 <li class="instagram">
@@ -56,49 +56,7 @@
 
     </main>
 
-
-    <script>
-        /*function showme(self){
-            alert(self)
-        }
-        
-        const link = {
-            github: 'silvio_git',
-            instagram: 'silvio_inst',
-            linkedin: 'silvio_linkedin',
-            email: 'silvio_mail'
-
-        }
-
-        showme(link.github)
-        showme(link.linkedin)
-
-        function changeSocialMedia() {/*Trocando o H1 usando o ID
-            document.getElementById('userName').textContent = 'Eduardo'
-            userName.textContent = 'Leandro'
-
-        }*/
-
-        const linkSocialMedia = {
-            github: 'silvio_git',
-            instagram: 'silvio_inst',
-            linkedin: 'silvio_linkedin',
-            email: 'silvio_mail'
-
-        }
-
-        function changeSocialMedia() {/*Trocando o H1 usando o ID*/
-            for (let li of socialLinks.children) {
-                const social = li.getAttribute('class')
-                li.children[0].href = `https://${social}.com/${linkSocialMedia[social]}`
-                alert(li.children[0].href)
-            }
-        }
-
-        changeSocialMedia()
-
-
-    </script>
+    <script src="main.js"></script>
 
 </body>
 
